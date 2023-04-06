@@ -19,7 +19,6 @@ if (!empty($_GET['id']))
 // Nếu người dùng click vào nút submit
 if (!empty($_POST['add_student']))
 {
-     
     // Lấy thông tin
     $data['student_id'] = isset($_POST['id']) ? $_POST['id'] : '';
     $data['student_name'] = isset($_POST['name']) ? $_POST['name'] : '';

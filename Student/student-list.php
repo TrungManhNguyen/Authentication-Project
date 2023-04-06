@@ -1,8 +1,4 @@
-<?php
-require ("/students.php");
-$students = getAllStudents();
-?>
- 
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,13 +8,18 @@ $students = getAllStudents();
     </head>
     <body>
         <a href="student-add.php">THÊM</a>
-        <table cellspacing="0" cellpadding="10">
+        <table border="1" cellspacing="0" cellpadding="10">
             <tr>
                 <td>ID</td>
                 <td>Fullname</td>
                 <td>Birthday</td>
                 <td>Action</td>
             </tr>
+            <?php
+require ("/students.php");
+$students = getAllStudents();
+?>
+ 
             <?php foreach ($students as $item){ ?>
             <tr>
                 <td><?php echo $item['student_id']; ?></td>
