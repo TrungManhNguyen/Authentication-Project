@@ -1,6 +1,6 @@
 <?php
     mysqli_connect($host, $user, $password, $database, $port, $socket).
-    $conn = mysqli_connect('localhost', 'root', 'vertrigo', 'demo') or die ('Không thể kết nối tới database');
+    $conn = mysqli_connect('localhost', 'root', '', 'demo') or die ('Không thể kết nối tới database');
     $sql = 'SELECT * FROM CUSTOMERS';
     $result = mysqli_query($conn, $sql);
     if (!$result){
